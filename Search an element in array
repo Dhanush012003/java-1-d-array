@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //get input
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int arr[]=new int[size];
+        ///geeting elements for array
+        for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+        }
+        //element need to search
+        int a=sc.nextInt();
+        ///printing the elements
+        int flag =0;
+        for(int i=0;i<size;i++){
+            if(arr[i]==a){
+               flag=1;
+               break;
+            }
+            else{
+                flag=0;
+            }
+            }
+        if(flag==1){
+            System.out.println(a+" is present in the array");
+        }
+        else{
+            System.out.println(a+" is not present in the array");
+        }
+            
+    }
+}
