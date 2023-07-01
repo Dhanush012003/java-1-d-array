@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of elements in the array");
+        int n=sc.nextInt();
+        ///declaring array
+        int arr[]=new int[n];
+        ///getting elements
+        System.out.println("Enter the elements in the array");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        ///location of element to delete
+        System.out.println("Enter the location where you wish to delete an element");
+        int d=sc.nextInt();
+        if(d<=n){
+             ///after deletion
+            System.out.println("Array after deletion is");
+            for(int i=0;i<n;i++){
+            if(arr[i]!=d){
+                System.out.println(arr[i]);
+            }
+        }
+        }else{
+                System.out.println("Invalid input");
+            }
+       
+    }
+}
