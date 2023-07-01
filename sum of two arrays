@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //get input
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int i,j,k;
+        int[]arr1=new int[size];
+        int[]arr2=new int[size];
+        for(i=0;i<size;i++){
+            arr1[i]=sc.nextInt();
+        }
+        ///input for array 2
+        for(j=0;j<size;j++){
+            arr2[j]=sc.nextInt();
+        }
+        //sum of two arrays
+        //System.out.print(i+" "+j);
+        for(k=0;k<size;k++){
+            System.out.print((arr1[k]+arr2[k])+" ");
+        }
+    }
+}
